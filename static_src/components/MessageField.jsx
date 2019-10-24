@@ -1,4 +1,5 @@
 import React from "react";
+import Message from "./Message"
 
 export default class MessageField extends React.Component {
     state = {
@@ -17,6 +18,6 @@ export default class MessageField extends React.Component {
                 {messageElements}
                 <button onClick={this.handleClick}>Send Message</button>
             </div>
-        )
+        )//hfhgf
     }
 }
