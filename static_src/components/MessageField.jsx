@@ -9,9 +9,8 @@ export default class MessageField extends React.Component {
         this.setState({messages: [...this.state.messages, "Нормально"]})
     }
     render() {
-        const messageElements = this.state.messages.map((index, text) => {
-            this.setState({messages: [...this.state.messages, "Нормально"]})
-        })
+        const {messages} = this.state
+        const messageElements = messages.map(message => <Message key={message} text={message}/> )
         return
         (
             <div>
